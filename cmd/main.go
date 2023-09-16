@@ -11,9 +11,5 @@ func main() {
 	flag.Parse()
 	arguments := internal.Argument
 	fmt.Println(arguments.Urls.Get())
-	fmt.Println(arguments.Urls.Get())
-	fmt.Println(arguments.Urls.Get())
-	fmt.Println(arguments.Urls.Get())
-	fmt.Println(arguments.Urls.Get())
 	handler.ArgHandler(arguments)
 }

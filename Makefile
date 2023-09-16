@@ -15,3 +15,7 @@ build-run:
 test: _test
 	-@docker compose -f docker-compose-test.yml down
 
+
+.PHONY: debug
+debug:
+	
