@@ -1,17 +1,19 @@
 package main
 
 import (
+	"ecdownloader/internal"
+	"ecdownloader/internal/handler"
 	"flag"
 	"fmt"
 )
 
 func main() {
-	fmt.Println("hello world")
-	intVal := 0
-	flag.IntVar(&intVal, "name", 12345, "help message for flagname")
-	stringVal := ""
-	flag.StringVar(&stringVal, "name2", "fuck", "asdfasdf")
 	flag.Parse()
-	fmt.Println(intVal)
-	fmt.Println(stringVal)
+	arguments := internal.Argument
+	fmt.Println(arguments.Urls.Get())
+	fmt.Println(arguments.Urls.Get())
+	fmt.Println(arguments.Urls.Get())
+	fmt.Println(arguments.Urls.Get())
+	fmt.Println(arguments.Urls.Get())
+	handler.ArgHandler(arguments)
 }

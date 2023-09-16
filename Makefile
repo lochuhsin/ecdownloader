@@ -1,3 +1,9 @@
+
+
+.PHONY: b
+b:
+	go build cmd/main.go
+
 .PHONY: br
 br: build-run
 
